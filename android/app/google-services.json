@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "459638156686",
+    "project_id": "drivenow-2bbd5",
+    "storage_bucket": "drivenow-2bbd5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459638156686:android:ddcfe0d0a2f4650dc048df",
+        "android_client_info": {
+          "package_name": "com.quiz.drivenow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459638156686-fmgf4o3fn4l7245bavcgimgmt5gmf71i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5lCFHsgle5e20iZgzuxd7RWFjhZY5C2I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459638156686-fmgf4o3fn4l7245bavcgimgmt5gmf71i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
