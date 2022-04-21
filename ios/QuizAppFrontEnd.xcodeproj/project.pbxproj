@@ -237,7 +237,6 @@
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
 				9A9BB7FE0788FCC7267BF71F /* [CP] Copy Pods Resources */,
-				5AFCC0ABAFEBC3E678310DEC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -261,7 +260,6 @@
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				DB5C4D66FA346EE0BCC24B69 /* [CP] Copy Pods Resources */,
 				2800477CAC2E0A58F1763720 /* [CP-User] [RNFB] Core Configuration */,
-				1AAA25E9587B72E92C2E8B03 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -323,7 +321,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = B2AATJ83P4;
+						DevelopmentTeam = MA9C87NJ39;
 						LastSwiftMigration = 1120;
 						ProvisioningStyle = Automatic;
 					};
@@ -408,24 +406,6 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		1AAA25E9587B72E92C2E8B03 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-QuizAppFrontEnd/Pods-QuizAppFrontEnd-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL-Universal/OpenSSL.framework/OpenSSL",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSL.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuizAppFrontEnd/Pods-QuizAppFrontEnd-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		2800477CAC2E0A58F1763720 /* [CP-User] [RNFB] Core Configuration */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -452,24 +432,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
-		};
-		5AFCC0ABAFEBC3E678310DEC /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-QuizAppFrontEnd-QuizAppFrontEndTests/Pods-QuizAppFrontEnd-QuizAppFrontEndTests-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL-Universal/OpenSSL.framework/OpenSSL",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSL.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuizAppFrontEnd-QuizAppFrontEndTests/Pods-QuizAppFrontEnd-QuizAppFrontEndTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 		9A9BB7FE0788FCC7267BF71F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -762,8 +724,8 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = B2AATJ83P4;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = MA9C87NJ39;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = QuizAppFrontEnd/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -790,8 +752,8 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = B2AATJ83P4;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = MA9C87NJ39;
 				INFOPLIST_FILE = QuizAppFrontEnd/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (

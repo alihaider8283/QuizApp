@@ -14,7 +14,7 @@ const adUnitId =  TestIds.INTERSTITIAL ; //   __DEV__
   // ?  TestIds.INTERSTITIAL
   // : 'ca-app-pub-xxxxxxxxxxxxx/yyyyyyyyyyyyyy';
 
-const interstitialAd = InterstitialAd.createForAdRequest(TestIds.INTERSTITIAL);
+const interstitialAd = InterstitialAd.createForAdRequest('ca-app-pub-8187103578520437/7134682549');
 
 
 class CourseDetail extends Component {

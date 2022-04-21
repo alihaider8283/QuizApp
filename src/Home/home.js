@@ -13,22 +13,22 @@ class Home extends Component {
     data = [
       {
         key : 1,
-        title: "Quiz",
+        title: "Questionnaire",
         img: require('../../assets/Icons/category-icon.png')
       },
       {
         key : 2,
-        title: "Courses",
+        title: "Cours",
         img: require('../../assets/Icons/course-icon.png')
       },
       {
         key : 3,
-        title: "Signs",
+        title: "Panneaux",
         img: require('../../assets/Icons/sign-icon.png')
       },
       {
         key : 4,
-        title: "Statistics",
+        title: "Statistiques",
         img: require('../../assets/Icons/stats-icon.png')
       }
     ]
@@ -36,6 +36,7 @@ class Home extends Component {
     getListViewItem = (item) => {  
       switch(item.key){
         case 1:
+              // this.props.navigation.navigate('Result');
               this.props.navigation.navigate('Category');
               break;
         case 2:
@@ -75,8 +76,8 @@ class Home extends Component {
                 <View style={styles.introView}>
                   <Image style={styles.logo} source={require('../../assets/Icons/logo-horizontal.png')} />
                   <View >
-                    <Text style={styles.welcomeText} >Welcome to Drive Now</Text>
-                    <Text style={styles.welcomeText} >Master Your Driving Skills</Text>
+                    <Text style={styles.welcomeText} >Bienvenue dans Conduisez maintenant</Text>
+                    <Text style={styles.welcomeText} >Maîtrisez vos compétences de conduite</Text>
                   </View>
                 </View>
                 <FlatList  
@@ -86,7 +87,9 @@ class Home extends Component {
                     numColumns={2}
                 />  
                 <View style={styles.banner}>
-                    <BannerAd  unitId={TestIds.BANNER} size={BannerAdSize.ADAPTIVE_BANNER}/>
+                    <BannerAd  unitId={'ca-app-pub-8187103578520437/9543060329' } 
+                    size={BannerAdSize.ADAPTIVE_BANNER}
+                    />
                 </View>
                 <Image style = {styles.car} source = {require('../../assets/Icons/car.png')}/> 
             </View>

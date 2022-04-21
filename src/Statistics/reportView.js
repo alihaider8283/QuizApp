@@ -50,9 +50,9 @@ class ReportView extends Component {
                         <Image  style={styles.categoryIcons} source={require('../../assets/Icons/stats-icon.png')}/>
                         <View  style={styles.textContainer}>
                             <Text style={styles.title} ellipsizeMode='tail' numberOfLines={1}>{item.category}</Text>
-                            <Text style={styles.description} ellipsizeMode='tail' numberOfLines={2}>Series {item.series}</Text>
+                            <Text style={styles.description} ellipsizeMode='tail' numberOfLines={2}>Séries {item.series}</Text>
                             <Text style={styles.date} ellipsizeMode='tail' numberOfLines={1}>{item.date}</Text> 
-                            <Text style={styles.questions} ellipsizeMode='tail' numberOfLines={1}>Total Questions {item.questionsCount}</Text> 
+                            <Text style={styles.questions} ellipsizeMode='tail' numberOfLines={1}>Nombre total de questions {item.questionsCount}</Text> 
 
                         </View>
                     </View>

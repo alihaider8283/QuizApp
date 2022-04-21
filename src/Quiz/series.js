@@ -66,8 +66,8 @@ class Series extends Component {
                     : this.props.data != null
                         ? <View>
                             <View style={styles.intro}>
-                                <Text style={styles.introText}>Select Your</Text>
-                                <Text style={styles.introText}>Favorite Test Series</Text>
+                                <Text style={styles.introText}>Sélectionnez votre</Text>
+                                <Text style={styles.introText}>Série de tests préférée</Text>
                             </View>
                             <FlatList
                                 style={styles.series}
@@ -80,7 +80,7 @@ class Series extends Component {
                             <Image style={styles.emptySign} source={require('../../assets/Icons/category-icon.png')} />
                             <Text styles={styles.errorMessage} >{this.props.error}</Text>
                             <TouchableOpacity onPress={() => this.onPressTryAgain()}>
-                                <Text style={styles.tryAgain}> Try Again </Text>
+                                <Text style={styles.tryAgain}> Réessayer </Text>
                             </TouchableOpacity>
                         </View>
                 }

@@ -9,17 +9,18 @@ const adUnitId = TestIds.REWARDED; //   __DEV__
 // : 'ca-app-pub-xxxxxxxxxxxxx/yyyyyyyyyyyyyy';
 
 
-const rewarded = RewardedAd.createForAdRequest(TestIds.REWARDED);
+const rewarded = RewardedAd.createForAdRequest('ca-app-pub-8187103578520437/7134682549');
 
 
 class TestResult extends Component {
     state = {
+        // result: [], //need to pass questions data
         result: this.props.route.params.result, //need to pass questions data
         count: 0
     }
 
     componentDidMount() {
-
+// console.log('ads')
         rewarded.onAdEvent(type => {
             if (type === RewardedAdEventType.LOADED) {
                 console.log('rewarded adLoaded');

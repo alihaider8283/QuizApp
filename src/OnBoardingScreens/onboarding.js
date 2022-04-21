@@ -38,25 +38,27 @@ class OnBoardingScreens extends Component {
               <Onboarding 
                onDone={ () => this.nextButtonPressed()}
                onSkip={ () => this.skipButtonPressed()}
+               nextLabel='suivante'
+               skipLabel='Sauter'
                titleStyles={styles.title}
                pages= {[
                 {
                     backgroundColor: '#fff',
                     image: <Image style={styles.img} source={require('../../assets/Icons/quiz.png')} />,
-                    title: 'Take A Quiz',
-                    subtitle: 'You can test your abilities by taking a quiz and improve yourself',
+                    title: 'Répondez à un questionnaire',
+                    subtitle: 'Vous pouvez tester vos capacités en répondant à un quiz et vous améliorer',
                   },
                   {
                     backgroundColor: '#fff',
                     image: <Image style={styles.img}  source={require('../../assets/Icons/sign.png')} />,
-                    title: 'Street Signs',
-                    subtitle: 'Learn about street signs and outstand the driving tests',
+                    title: 'Plaques de rue',
+                    subtitle: 'En savoir plus sur les panneaux de signalisation et réussir les tests de conduite',
                   },
                   {
                     backgroundColor: '#fff',
                     image: <Image style={styles.img}  source={require('../../assets/Icons/stats.png')} />,
-                    title: 'Statistics',
-                    subtitle: 'Keep Record of your performance throughout the learning process',
+                    title: 'Statistiques',
+                    subtitle: `Gardez une trace de vos performances tout au long du processus d'apprentissage`,
                   }
               ]}
               />

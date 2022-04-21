@@ -79,6 +79,7 @@ const App = () => {
               cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS
             }}
           >
+            
               <RootStack.Screen name="Splash" component={SplashScreen} 
               options={{headerShown: false}}
               />
@@ -86,36 +87,50 @@ const App = () => {
               options={{headerShown: false}} 
               />
               <RootStack.Screen name="Home" component={HomeScreen}
-              options={{headerShown: false}}
+              // options={{headerShown: false}}
+              options={{headerTitle: "Domicile"}}
+
               />
               <RootStack.Screen name="Category" component={Category}
+              options={{headerTitle: "Catégorie"}}
+
               />
               <RootStack.Screen name="Sign" component={Signs}
-              options={{headerTitle: "Sign Categories"}}
+              options={{headerTitle: "Catégories de signe"}}
               />
               <RootStack.Screen name="Course" component={Course}
+              options={{headerTitle: "Cours"}}
               />
               <RootStack.Screen name="Stats" component={Stats}
+              options={{headerTitle: "Statistiques"}}
               />
               <RootStack.Screen name="SignDetail" component={SignDetail}
+              options={{headerTitle: "Détail du signe"}}
               />
               <RootStack.Screen name="CourseDetail" component={CourseDetail}
+              options={{headerTitle: "Détail du cours"}}
               />
               <RootStack.Screen name="Series" component={Series}
+              options={{headerTitle: "Séries"}}
               />
               <RootStack.Screen name="Test" component={Test}
+              options={{headerTitle: "Test"}}
               // options={{headerShown: false}}
               />
               <RootStack.Screen name="Result" component={Result}
+              options={{headerTitle: "Résultat"}}
               />
               <RootStack.Screen name="Report" component={Report}
+              options={{headerTitle: "Signaler"}}
               />
               <RootStack.Screen name="Voice" component={Voice}
+              options={{headerTitle: "Voix"}}
               />
               <RootStack.Screen name="ReportGrid" component={ReportGrid}
+              options={{headerTitle: "Grille de rapport"}}
               />
               <RootStack.Screen name="CourseCategory" component={CourseCategory}
-              options={{headerTitle: "Course Categories"}}
+              options={{headerTitle: "Catégorie de cours"}}
               />
           </RootStack.Navigator>
       </NavigationContainer>

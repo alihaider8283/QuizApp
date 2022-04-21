@@ -459,12 +459,12 @@ class Test extends Component {
                             />
                             {this.state.validate
                                 ? <TouchableOpacity style={styles.validate} onPress={() => this.onValidate()}>
-                                    <Text>Validate</Text>
+                                    <Text>Valider</Text>
                                 </TouchableOpacity>
                                 : <View></View>}
                             {this.state.next
                                 ? <TouchableOpacity style={styles.validate} onPress={() => this.onpressNext()}>
-                                    <Text>Next</Text>
+                                    <Text>Suivante</Text>
                                 </TouchableOpacity>
                                 : <View></View>}
                         </View>
@@ -472,7 +472,7 @@ class Test extends Component {
                             <Image style={styles.emptySign} source={require('../../assets/Icons/category-icon.png')} />
                             <Text styles={styles.errorMessage} >{this.props.error}</Text>
                             <TouchableOpacity onPress={() => this.onPressTryAgain()}>
-                                <Text style={styles.tryAgain}> Try Again </Text>
+                                <Text style={styles.tryAgain}> Réessayer </Text>
                             </TouchableOpacity>
                         </View>
                 }

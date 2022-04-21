@@ -58,8 +58,8 @@ class Categories extends Component {
                :  this.props.data != null
                   ? <View>
                         <View style={styles.intro}>
-                            <Text style={styles.introText}>Select Your</Text>
-                            <Text style={styles.introText}>Favorite Category</Text>
+                            <Text style={styles.introText}>Sélectionnez votre</Text>
+                            <Text style={styles.introText}>Catégorie préférée</Text>
                         </View> 
                         <FlatList  
                         style={styles.categories}
