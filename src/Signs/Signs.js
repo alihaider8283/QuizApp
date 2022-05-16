@@ -130,9 +130,11 @@ class Signs extends Component {
                     { this.props.Fetching == false && this.props.FetchingSigns
                             ?  <BallIndicator style={{marginTop: 100}} color={Colors.getColor('secondaryColor')} />
                             :  this.props.signsData != null
-                            ? <View style={{marginTop: 10, marginLeft:10}}>
+                            ? <View style={{marginTop: 10, marginLeft:10,}}>
                                     <FlatList  
+                                   contentContainerStyle={{paddingBottom:150,}}
                                     data={this.props.signsData}  
+                                    style={{height:'80%'}}
                                     renderItem={({item}) =>  this.renderIndividualSignItem(item) } 
                                     numColumns={4}
                                     /> 

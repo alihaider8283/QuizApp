@@ -10,7 +10,7 @@ const renderData = (props) => {
         case 0:
             return (
                 <RadioButtonRN
-                    data={props.item}
+                    data={props.item || []}
                     boxStyles={styles.boxStyles}
                     // box={true}
                     selectedBtn={(e) => props.onRadioButtonSelected(e)}

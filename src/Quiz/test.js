@@ -173,7 +173,7 @@ class Test extends Component {
         Arr[0].questions.map((QNA, index) => {
 
             QNA.options.map((item) => {
-                if (item.value == 1 && item.check == true) {
+                if (item?.value == 1 && item?.check == true) {
                     check = true
                 }
                 console.log(item.check, 'Check multiple');
@@ -324,7 +324,7 @@ class Test extends Component {
         }
 
         return (
-            item.questionType == 'single'
+            item?.questionType == 'single'
                 ? <SingleAnswersView
                     status={this.state.questionStatus}
                     item={item.options}
@@ -370,13 +370,11 @@ class Test extends Component {
                     contentContainerStyle={{ paddingBottom: WP(20) }}
                 >
                     {
-                        item.questions.map(item => {
-
-
+                        item?.questions.map(item => {
                             return (
                                 <>
                                     <View style={styles.questionView}>
-                                        <Text styles={styles.questionTitle}>{item.title}</Text>
+                                        <Text styles={styles.questionTitle}>{item?.title}</Text>
 
                                     </View>
                                     {this.renderAnswers(item)}
@@ -384,8 +382,7 @@ class Test extends Component {
                             )
                         })
                     }
-                </ScrollView>
-
+                </ScrollView> 
             </View>
         );
     }
